@@ -1,9 +1,9 @@
 ### Automation for Stars Wars API using Cypress
 
-#####Cypress (https://www.cypress.io/)
+##### Cypress (https://www.cypress.io/)
 
 ----
-#####Endpoints
+##### Endpoints
 `https://swapi.co/api/people/1/`
 
 `https://swapi.co/api/planets/1/`
@@ -36,3 +36,6 @@ Planet:
         "birth_year": "19BBY",
         "gender": "male"
 ```
+
+##### Run Tests
+`npm run cypress:open`
