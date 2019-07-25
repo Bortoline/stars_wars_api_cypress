@@ -1,7 +1,7 @@
 describe('Stars Wars', () => {
     it('GET First People', () => {
 
-        cy.request('https://swapi.co/api/people/1/')        
+        cy.request('api/people/1/')        
         .then((response) => {
           expect(response.status).to.eq(200),
           expect(response.body).to.have.property("name", "Luke Skywalker")
@@ -18,7 +18,7 @@ describe('Stars Wars', () => {
 
     it('GET First Planet', () => {
 
-        cy.request('https://swapi.co/api/planets/1/')        
+        cy.request('api/planets/1/')        
         .then((response) => {
           expect(response.status).to.eq(200),
           expect(response.body).to.have.property("name", "Tatooine"),
